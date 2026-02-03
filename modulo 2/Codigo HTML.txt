@@ -1,6 +1,25 @@
 shorthand border:
+
 border: size formt color;
+
 shorthand box-shadow:
+
 box-shadow: axleX axleY color
+
+background: color image repeat position;
+
+font: style weight size/line-height family;
+
+list-style: type position image;
+
+flex: grow shrink basis;
+
+transition: property duration timing delay;
+
+animation: duration timing delay iteration direction fill-mode name;
+
+text-decoration: line style color thickness;
+
+border-radius: top-left top-right bottom-right bottom-left;
 
 
