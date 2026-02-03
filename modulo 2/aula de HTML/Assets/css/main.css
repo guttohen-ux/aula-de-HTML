@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Syriac:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* person selector
+#  = id;    
+.  = class;
+>  = children
+:  = pseudo-class;
+:: = pseudo-element;
+font = style weight size family;
+*/
+
+body {
+    display: flex;
+    background-color: #7776BC;
+    font: normal 400 14px Roboto;
+
+}
+
+.clicavel {
+    margin: 12.5% auto 12.5% auto;
+    gap: 20px;
+    display: flex;
+}
+
+
+.objeto {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 6px;
+    border: 3px groove #CDC7E5;
+    background-color: #FFFBDB;
+    width: 200px;
+    height: 200px;
+    transition: all 750ms;
+    position: relative;
+    cursor: pointer;
+}
+
+.objeto:hover{
+    width: 400px;
+    height: 400px;
+    transition: all 750ms;    
+}
+
+.objeto.ativo {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    width: 200px;
+    height: 200px;
+}

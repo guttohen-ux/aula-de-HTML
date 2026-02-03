@@ -1,0 +1,6 @@
+shorthand border:
+border: size formt color;
+shorthand box-shadow:
+box-shadow: axleX axleY color
+
+

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+header{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.gridUp {
+    background-color: #FFFFFF;
+    display: flex;
+    gap: 15px;
+}
+
+
+.gridUp a {
+    font: normal 300 16px "JetBrains Mono", 'Lucida Console', Monaco, monospace;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.gridDown{
+    background-color: #C4170C;
+}
+
+#link1{
+    color: #0669DF;
+}
+#link1:hover{
+    border: solid;
+}
+
