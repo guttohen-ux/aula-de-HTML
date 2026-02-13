@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(../img/imagens-cap19/wallpaper007.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.quadrado {
+    border: 1px solid black;
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.container>.qdr1 {
+    background-image: linear-gradient(to bottom, #FAA275, #5C374C);
+}
+
+.container>.qdr2 {
+    background-image: url(../img/imagens-cap19/pattern001.png);
+}
+
+.container>.qdr3 {
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.452), rgba(12, 11, 11, 0.384)),
+        url(../img/imagens-cap19/pattern001.png),
+        linear-gradient(to bottom, #FAA275, #5C374C);
+
+}

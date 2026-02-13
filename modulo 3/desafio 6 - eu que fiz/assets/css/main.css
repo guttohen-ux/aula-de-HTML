@@ -1,0 +1,102 @@
+
+@font-face {
+    font-family: Sriracha;
+    src: url(../fonts/Sriracha/sriracha/Sriracha-Regular.ttf);
+}
+
+@font-face {
+    font-family: zhukov;
+    src: url(../fonts/Zhukov-Zippo/zhukov_zippo.otf);
+}
+
+:root{
+    --cor1: #8A7B78;
+    --cor2: #DB836C;
+    --cor3: #ABDB6B;
+    --cor4: #6B88DB;
+
+
+}
+
+
+body {
+    font-size: 1.5em;
+    background-color: var(--cor2);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+
+}
+
+header {
+    font-family: zhukov, sans-serif;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+h1{
+    padding-top: 10px;
+    margin-top: 0px;
+}
+
+header>p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header>p>a {
+    
+    color: white;
+    text-decoration: none;
+}
+header>p>a:hover{
+    text-decoration: underline;
+    
+}
+
+
+main{
+    padding: 15px;
+    background-color: white;
+    margin: 0px auto;
+    min-width: 500px;
+    max-width: 800px;
+}
+
+pre{
+    margin: 0;
+    font-family: Sriracha, sans-serif;
+}
+
+main>#priImg, #secImg{
+    
+    padding: 60px 0px 60px 20px;
+    margin: 5px -15px;
+}
+
+#priImg{
+    background: black url(../img/katerinavulcova-ladybug-8655134_1280.jpg) center no-repeat fixed;
+}
+
+#secImg{
+    background: black url(../img/top-view-flower-press-with-book.jpg) center no-repeat fixed;
+}
+
+.destaque{
+    color: white;
+    padding: 10px;
+    background-color: rgba(19, 19, 19, 0.575);
+    border-radius: 7px;
+    font: 1em Sriracha, sans-serif;
+    width: 300px;
+}
+
+footer{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    padding: 1px;
+}
+

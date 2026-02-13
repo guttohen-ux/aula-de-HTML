@@ -1,0 +1,23 @@
+body {
+    background-color: rgba(39, 39, 39, 0.445);
+}
+
+.qdr {
+    background-image: url(../img/imagens-cap19/wallpaper002.jpg);
+    margin: 10px;
+    border: 1px solid black;
+    height: 270px;
+    border-radius: 15px;
+}
+
+.top1 {
+    background-position: left top;
+}
+
+.top2 {
+    background-position: left center;
+}
+
+.top3 {
+    background-position: left bottom;
+}
