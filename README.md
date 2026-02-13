@@ -7,3 +7,4 @@ modulo 2/desafio cap 10/index.html
 
 projeto cordel:
 modulo 3/desafio 6 - eu que fiz/index.html
+modulo 3/desafio 6 - modelo curso em vídeo/index.html
