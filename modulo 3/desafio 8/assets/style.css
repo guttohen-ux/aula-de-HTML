@@ -1,0 +1,46 @@
+:root {
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+}
+
+* {
+
+    font-family: var(--fonte-padrao);
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header {
+    background-color: rgb(90, 184, 90);
+    padding: 16px;
+    margin-bottom: 10px;
+}
+
+table {
+    margin-left: 70px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+td{
+    padding: 5px;
+    border: 1px solid black;
+    width: 150px;
+}
+
+th{
+    padding: 5px;
+    border: 1px solid black;
+    width: 150px;
+}
+
+thead{
+    background-color: #EAECF0;
+}
+
+.ranking{
+    width: 10px;
+    background-color: #EAECF0;
+}
+
+

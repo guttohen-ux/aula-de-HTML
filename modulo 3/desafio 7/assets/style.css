@@ -1,0 +1,49 @@
+:root {
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+}
+
+* {
+
+    font-family: var(--fonte-padrao);
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header {
+    background-color: rgb(90, 184, 90);
+    padding: 16px;
+    margin-bottom: 10px;
+}
+
+table {
+    margin-left: 70px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+tr{
+    background-color: aliceblue;
+}
+
+tr.linha {
+    background-color: gray;
+}
+
+td {
+    border: 1px solid black ;
+    height: 30px;
+    width: 100px;
+    vertical-align: bottom;
+}
+
+td.categoria{
+    text-align: center;
+    padding: 8px 4px;
+}
+
+
+td.numero{
+    text-align: right;
+}
+

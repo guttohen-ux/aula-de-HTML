@@ -1,0 +1,45 @@
+:root {
+    --font-padrao: Verdana, Arial, Sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font: normal 400 1.4em var(--font-padrao)
+}
+
+
+caption {
+    padding: 10px;
+    border: 1px solid black;
+    height: 50px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 70px auto;
+    min-width: 50px;
+}
+
+tbody>tr>th,
+tbody>tr>td,
+thead>tr>th {
+    padding: 5px;
+    border: 1px solid black;
+    height: 25px;
+    width: 1000px;
+}
+
+thead,
+.media {
+    background-color: grey;
+    color: white;
+}
+
+#container{
+    overflow-x: auto;
+}

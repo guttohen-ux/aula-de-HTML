@@ -1,0 +1,12 @@
+:root {
+    --font-padrao: Verdana, Arial, Sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font: normal 400 1.4em var(--font-padrao)
+}
