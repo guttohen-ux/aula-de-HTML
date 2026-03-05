@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iframe</title>
+  </head>
+
+  <body>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      header {
+        box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.411);
+        text-align: center;
+        padding: 20px;
+        background-color: rgb(56, 56, 56);
+      }
+      header > h1,
+      header > h2 {
+        color: white;
+        margin-bottom: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      header > h1 {
+        font: normal 600 2em verdana;
+      }
+      header > h2 {
+        font: normal 600 1.5em verdana;
+      }
+
+      main{
+        margin: 20px;
+  
+        font: normal 400 1.2em arial, sans-serif;
+        line-height: 1.5em;
+      }
+
+      iframe{
+        display: block;
+        margin: 20px auto;
+        width: 80vw;
+        height: 600px;
+        border: 1px solid rgb(230, 230, 230);
+        border-radius: 7px;
+        box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.200);
+      }
+
+
+    </style>
+    <header>
+      <h1>Meu site principal</h1>
+      <h2>Lorem, ipsum dolor sit amet co dolores. Impedit, at iusto.</h2>
+    </header>
+    <main>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
+        consectetur nulla possimus numquam, mollitia dolor asperiores tempora
+        voluptas saepe, impedit aliquid pariatur neque totam, eos veritatis
+        eaque quis tenetur dolores.
+      </p>
+      <iframe src="pag/pag4.html" sandbox="allow-same-origin" referrerpolicy="no-referrer"></iframe>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
+        consectetur nulla possimus numquam, mollitia dolor asperiores tempora
+        voluptas saepe, impedit aliquid pariatur neque totam, eos veritatis
+        eaque quis tenetur dolores.
+      </p>
+    </main>
+  </body>
+</html>

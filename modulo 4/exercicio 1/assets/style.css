@@ -10,3 +10,9 @@
 body {
     font: normal 400 1.4em var(--font-padrao)
 }
+
+iframe{
+    width: 600px;
+    height: 750px;
+    border: 1px solid bisque;
+}

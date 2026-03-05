@@ -1,0 +1,29 @@
+:root {
+  --font-padrao: Verdana, Arial, Sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 16px;
+  padding: 5px;
+  font: normal 400 1.4em var(--font-padrao);
+  text-align: justify;
+}
+h1 {
+  font:
+    normal 400 1.5em Arial,
+    sans-serif;
+}
+
+iframe{
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.192);
+    border: 1px solid rgb(235, 235, 235);
+    display: block;
+    margin: 50px auto;
+    height: 750px;
+    width: 600px;
+}

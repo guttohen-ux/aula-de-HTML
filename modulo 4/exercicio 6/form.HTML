@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.js" method="POST">
+      <p>
+        <label for="Iuser">Nome de Usuário: </label>
+        <input
+          type="text"
+          name="user"
+          id="Iuser"
+          required
+          minlength="5"
+          maxlength="30"
+          placeholder="Coloque o nome de Usuário"
+          autocomplete="name"
+        />
+      </p>
+      <p>
+        <label for="Ipassword">Senha: </label>
+        <input
+        type="password"
+          name="password"
+          id="Ipassword"
+          required
+          minlength="8"
+          maxlength="30"
+          placeholder="Coloque a sua Senha"
+          autocomplete="current-password"
+        />
+      </p>
+      <p>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </p>
+    </form>
+  </body>
+</html>

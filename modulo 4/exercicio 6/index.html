@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+    header {
+      color: black;
+      background-color: grey;
+    }
+    header > h1,
+    header > p {
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>Meu primeiro Formulário</h1>
+      <p>Fazendo um formulário em HTML</p>
+    </header>
+    <main>
+      <form method="get" autocomplete="off" action="cadastro.js">
+        <p>
+          <label for="Nome">Nome:</label>
+          <input type="text" name="Nome" id="Nome" />
+        </p>
+        <p>
+          <label for="Sobrenome">Sobrenome:</label>
+          <input type="text" name="Sobrenome" id="Sobrenome" />
+        </p>
+        <p><input type="submit" value="Enviar" /></p>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+:root {
+  --font-padrao: Verdana, Arial, Sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font: normal 400 1.4em var(--font-padrao);
+  text-align: justify;
+}
+
+main {
+  margin: 30px 20px;
+  padding: 20px;
+}
+
+h1 {
+  margin: 20px;
+  font:
+    normal 400 2em Arial,
+    sans-serif;
+  text-align: center;
+}
+
+main > p {
+  line-height: 2em;
+}
+
+main > ul {
+  box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.350);
+  width: fit-content;
+  background-color: rgba(22, 22, 22, 0.699);
+  margin: 20px;
+  padding: 10px 10px 10px 27px;
+  border-radius: 7px;
+}
+
+iframe {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.192);
+  border: 1px solid rgb(235, 235, 235);
+  width: 80vw;
+  height: 600px;
+  margin: 20px auto;
+}
