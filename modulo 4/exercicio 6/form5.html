@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    h1 {
+      margin: 20px;
+    }
+
+    form {
+      margin: 20px;
+    }
+    form > button {
+      margin: 10px 0px;
+    }
+  </style>
+
+  <body>
+    <h1>Fazendo mais um Formulario</h1>
+
+    <form action="/enviar" method="post">
+      <fieldset>
+        <legend>colocando mais tipos de Formulario</legend>
+        <label for="icolor">Escolha um cor</label>
+        <input type="color" name="tipo de cor" id="icolor" value="#3fc3d5" />
+        <br />
+        <label for="isatisfaction">Avaliação</label>
+        <input
+          type="range"
+          name="Avaliação"
+          id="isatisfaction"
+          min="1"
+          max="20"
+          value="15"
+        />
+        <br />
+        <label for="ifile">Arquivo: </label>
+        <input type="file" name="file" id="ifile" />
+        <br />
+        <label for="ifoto">Foto: </label>
+        <input type="image" src="" alt="" />
+      </fieldset>
+
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpar</button>
+    </form>
+
+    <script src="cadastro2.js"></script>
+  </body>
+</html>

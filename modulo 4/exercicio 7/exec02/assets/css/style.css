@@ -1,0 +1,23 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #233eff;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  padding: 10px;
+  color: whitesmoke;
+  text-shadow: 2px 2px 0px #1a2dbd;
+}

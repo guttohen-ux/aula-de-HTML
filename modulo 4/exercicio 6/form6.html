@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <header>
+      <h1>Mais um Formulario</h1>
+      <p>não aguento mais</p>
+    </header>
+    <main>
+      <form action="cadastro2.js" method="post">
+          <fieldset>
+            <legend>
+              <p>criando uns Formularios a mais</p>
+            </legend>
+            <label for="istates">Estado: </label>
+            <select name="Estado" id="istates">
+              <option value="">------Escolha------</option>
+              <optgroup label="Região do Norte">
+                <option value="AM">Amazonas</option>
+                <option value="RR">Roraima</option>
+                <option value="AC">acre</option>
+              </optgroup>
+              <optgroup label="Região do Nordeste">
+                <option value="TO">Tocantis</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PA">Pará</option>
+              </optgroup>
+              <optgroup label="Região do Sudeste">
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+              </optgroup>
+            </select>
+            <p>
+              <label for="ipro">Profissão</label>
+              <input type="text" name="profission" id="ipro" list="ilistprof" />
+            </p>
+            <datalist id="ilistprof">
+              <option value="ADM">administrador</option>
+              <option value="CON">Contabilista</option>
+              <option value="ENG">Engenheiro</option>
+              <option value="PRF">Professor</option>
+              <option value="SER">Serviço Gerais</option>
+              <option value="DEV">Desenvolvedor</option>
+            </datalist>
+            <p>
+              <label for="imsg">Mensagem: </label><br />
+              <textarea
+                name="Mensagem"
+                id="imsg"
+                placeholder="Digite seu texto.. "
+                cols="50"
+                rows="15"
+              ></textarea>
+            </p>
+          </fieldset>
+        <button type="submit">Enviar</button>          
+        <button type="reset">Limpar</button>
+      </form>
+      
+    </main>
+  </body>
+</html>

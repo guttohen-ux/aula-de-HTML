@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/* media screen: printer */
+
+* {
+  margin: 10px;
+  padding: 10px;
+}
+
+html {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+menu {
+  display: none;
+}
+
+article::after{
+    content: 'é com grande vontade de estudar que eu criei esse media query';
+}

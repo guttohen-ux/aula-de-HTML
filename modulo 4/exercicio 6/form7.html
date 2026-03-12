@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <form action="" method="">
+      <fieldset>
+        <legend>Agora sim o uso de javascript</legend>
+        <p>
+          <label for="inum1">Numero: </label>
+          <input
+            type="number"
+            name="numberone"
+            id="inum1"
+            maxlength="30"
+            oninput="
+              iresult.innerHTML = Number(inum1.value) + Number(inum2.value)
+            "
+          />
+        </p>
+        <p>
+          <label for="inum2">Numero: </label>
+          <input
+            type="number"
+            name="numbertwo"
+            id="inum2"
+            maxlength="30"
+            oninput="
+              iresult.innerHTML = Number(inum1.value) + Number(inum2.value)
+            "
+          />
+        </p>
+        <p>
+          <label for="iresult">Resultado: </label>
+          <output name="Resultado" id="iresult">0</output>
+        </p>
+
+        <p>
+          <input
+            id="irange"
+            type="range"
+            max="30"
+            oninput="ioutRan.innerHTML = Number(irange.value)"
+          />
+          <br />
+          <label for="irange">Volume: </label>
+          <output id="ioutRan">15</output>
+        </p>
+        <p>
+          <label for="iOld">Qual a sua Idade: </label>
+          <input
+            type="number"
+            name="yearOlder"
+            id="iOld"
+            min="1900"
+            max="2030"
+            oninput="getYear()"
+          />
+        </p>
+        <p>
+          <label for="iotpYear">Sua idade:</label>
+          <output id="iotpYear"> </output>
+        </p>
+        <p>
+            <label for="iimg">Foto aqui: </label><br>
+            <input type="image" src="por-do-sol.jpg" alt="imagem de amostra">
+        </p>
+
+
+      </fieldset>
+
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpar</button>
+    </form>
+    <script>
+      function getYear() {
+        let data = new Date();
+        const Oldest = document.getElementById("iOld");
+        const otpYear = document.getElementById("iotpYear");
+        otpYear.innerHTML = data.getFullYear() - Number(Oldest.value);
+      }
+    </script>
+  </body>
+</html>
