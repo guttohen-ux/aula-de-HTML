@@ -1,0 +1,151 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --fonte-padrao:
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* cores primaria */
+  --cor-primaria: #1d1d7c;
+  --cor-primaria-1: #3a3afc;
+  --cor-primaria-2: #3131d4;
+  --cor-primaria-3: #2727ab;
+  --cor-primaria-4: #151559;
+
+  /* cores secundarias */
+  --cor-secundaria: #c8fcb8;
+  --cor-secundaria-1: #acd99e;
+  --cor-secundaria-2: #8cb080;
+  --cor-secundaria-3: #6b8763;
+  --cor-secundaria-4: #4b5e45;
+
+  /* cores terciaria */
+  --cor-terciaria: #fccfb8;
+  --cor-terciaria-1: #d9b29e;
+  --cor-terciaria-2: #b09080;
+  --cor-terciaria-3: #876f63;
+  --cor-terciaria-4: #5e4d45;
+
+  /* transição */
+  --time-trasicao: 500ms;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: var(--fonte-padrao);
+  background: var(--cor-primaria);
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  position: relative;
+  height: 96vh;
+  width: 100vw;
+}
+
+section#login {
+  display: block;
+  width: 300px;
+  height: 550px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.295);
+  transform: translate(-50%, -50%);
+
+  transition:
+    width var(--time-trasicao),
+    height var(--time-trasicao);
+}
+
+div#img-back {
+  display: block;
+  background: url(../img/metal.jpg) no-repeat bottom right;
+  background-size: cover;
+  height: 200px;
+}
+
+section#login > div#forms {
+  display: block;
+  padding: 10px;
+}
+
+div#forms > h1 {
+  text-align: center;
+  margin: 10px;
+}
+
+div#forms > p {
+  line-height: 1.5em;
+  text-align: justify;
+  margin: 10px;
+}
+
+.campo {
+  background-color: var(--cor-primaria-3);
+  height: 45px;
+  border-radius: 6px;
+  border: 2px solid var(--cor-primaria-3);
+  margin-bottom: 10px;
+}
+
+.campo > label {
+  display: none;
+}
+
+div.campo > span {
+  color: white;
+  font-size: 2em;
+  width: 40px;
+  padding: 5px;
+}
+
+div.campo > input {
+  background-color: var(--cor-terciaria-1);
+  font-size: 1em;
+  width: calc(100% - 44.5px);
+  border: none;
+  height: 100%;
+  border-radius: 5px;
+  padding: 4px;
+  transform: translateY(-12.5px);
+
+}
+
+div.campo > input:focus-within {
+  background-color: white;
+}
+
+form > input[type="submit"] {
+  display: block;
+  background-color: var(--cor-terciaria);
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  transition: background-color var(--time-trasicao);
+}
+
+form > input[type="submit"]:hover {
+  background-color: var(--cor-terciaria-escuro-1);
+}
+
+form > a.botao {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 33px;
+  text-decoration: none;
+}

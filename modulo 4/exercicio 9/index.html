@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="PT-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela de login</title>
+    <link rel="stylesheet" href="assets/css/all.css" />
+    <link rel="stylesheet" href="assets/css/medias.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    />
+  </head>
+  <body>
+    <main>
+      <section id="login">
+        <div id="img-back"></div>
+        <div id="forms">
+          <h1>Login</h1>
+          <p>
+            Seja bem-vindo(a) novamente, faça login para sua e poder fazer
+            configurações no seu ambiente
+          </p>
+          <form action="script.js" method="post">
+            <div class="campo">
+              <span class="material-symbols-outlined"> person </span>
+              <input
+                type="email"
+                name="login"
+                id="ilogin"
+                placeholder="Seu email de login..."
+                autocomplete=" email"
+                maxlength="30"
+                required
+              />
+              <label for="ilogin">Nome: </label>
+            </div>
+            <div class="campo">
+              <span class="material-symbols-outlined"> key </span>
+              <input
+                type="password"
+                name="password"
+                id="ipassword"
+                placeholder="Sua senha..."
+                autocomplete="current-password"
+                minlength="8"
+                required
+              />
+              <label for="ipassword">Senha: </label>
+            </div>
+            <input type="submit" value="Entrar" />
+            <a href="#" class="botao"
+              >Esqueci minha senha
+              <span class="material-symbols-outlined">mail</span>
+            </a>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
