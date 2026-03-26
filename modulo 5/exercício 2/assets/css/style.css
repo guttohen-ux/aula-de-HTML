@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+div.container{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: grey;
+    gap: 5px;
+}
+div.item{
+    padding: 10px;
+    height: 50px;
+    text-align: center;
+    background-color: darkgray;
+    border: 1px solid black;
+    border-radius: 8px;
+    transition: background-color 0.25s;
+
+}
+div.item:hover{
+    background-color: rgb(190, 190, 190);
+}

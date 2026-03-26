@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+body>main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    width: 50vw;
+    height: 50vh;
+
+}
+
+section{
+    background-color: darkgreen;
+    height: 50%;
+    width: 50%;
+}
+

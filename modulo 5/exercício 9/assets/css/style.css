@@ -1,0 +1,64 @@
+@charset "UTF-08";
+
+
+:root{
+    --fonte-padrao: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1,h2,p{
+margin-bottom: 0.8em;
+line-height: 1.5em;
+}
+
+body{
+    font-family: var(--fonte-padrao);
+}
+
+main{
+    background-color: lightgrey;
+    padding: 10px;
+}
+
+section {
+    padding: 10px;
+}
+
+div.media >  img,
+div.media > iframe{
+    display: block;
+    margin: 0 auto;
+}
+
+div.media >  img{
+    width: 300px;
+    height: auto    ;
+}
+
+
+div > p {
+    flex: 1 1 500px;
+}
+
+.media-text {
+    display: flex;
+    flex-flow: row wrap-reverse;
+}
+
+.media-video{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+div.text{
+    flex: 1 1 500px;
+}
+
+div.media{
+    flex: 1 0 500px;
+}

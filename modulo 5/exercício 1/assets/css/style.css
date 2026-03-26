@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+div.container{
+    display: flex;
+    margin: auto;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    gap: 5px;
+    justify-content: end;
+    height: 97.8vh;
+    width: 80vw;
+    padding: 5px;
+    background-color: grey;
+}
+div.item{
+    text-align: center;
+    background-color: darkgray;
+    border: 1px solid black;
+    border-radius: 8px;
+    transition: background-color 0.25s;
+
+}
+div.item:hover{
+    background-color: rgb(190, 190, 190);
+}
