@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid-layout</title>
+    <style>
+      :root {
+        --var-cor-de-fundo: #dddfde;
+        --var-cor-da-borda: #a1a1a1;
+      }
+
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      div.container {
+        display: grid;
+        margin: auto;
+        height: 100vh;
+        width: 100vw;
+        grid-template: 2fr 1fr 5fr 1fr / repeat(5, 1fr);
+      }
+
+      header {
+        grid-area: 1/1/2/-1;
+      }
+      menu {
+        grid-area: 2/1/3/-1;
+      }
+      main {
+        grid-area: 3/1/4/-2;
+      }
+      aside {
+        grid-area: 3/-2/4/-1;
+      }
+      footer {
+        grid-area: 4/1/5/-1;
+      }
+
+      .box-item {
+        text-align: center;
+        align-content: center;
+        border: 0.5px solid var(--var-cor-da-borda);
+        background-color: var(--var-cor-de-fundo);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="box-item">topo</header>
+      <menu class="box-item">menu</menu>
+      <main class="box-item">principal</main>
+      <aside class="box-item">secundario</aside>
+      <footer class="box-item">rodape</footer>
+    </div>
+  </body>
+</html>

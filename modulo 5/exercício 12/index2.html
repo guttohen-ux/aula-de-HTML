@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid-layout</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+      div.container {
+        display: grid;
+        margin: auto;
+        height: 500px;
+        width: 500px;
+        border: 1px solid lightblue;
+        grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+        place-items: normal normal;
+        place-content: normal normal;
+        grid-auto-flow: column;
+      }
+      .content1 {
+        grid-column-start: 1;
+        grid-column-end: 6;
+      }
+      .content2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 5;
+      }
+      .content6 {
+        grid-row-start: 5;
+        grid-column-start: 1;
+        grid-column-end: 6;
+      }
+      .content13 {
+        grid-row-start: 2;
+        grid-row-end: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="text content1">a</p>
+      <p class="text content2">b</p>
+      <p class="text content3">c</p>
+      <p class="text content4">d</p>
+      <p class="text content5">e</p>
+      <p class="text content6">f</p>
+      <p class="text content7">g</p>
+      <p class="text content8">h</p>
+      <p class="text content9">i</p>
+      <p class="text content10">j</p>
+      <p class="text content11">k</p>
+      <p class="text content12">l</p>
+      <p class="text content13">m</p>
+    </div>
+  </body>
+</html>

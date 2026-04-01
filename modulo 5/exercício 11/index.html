@@ -8,20 +8,18 @@
     <style>
         div.container{
             display: grid;
-            margin: 10px auto;
             border: 1px solid lightblue;
-            height: 321px;
-            width: 600px;
-            grid-template-rows: repeat(4, 100px);
-            grid-template-columns: repeat(3, 100px);
-            gap: 10px;
-            align-content: start;
-            justify-content: center;
+            height: 400px;
+            grid-template: repeat(4, auto) / repeat(3, auto);
+            place-items: normal stretch;
+            place-content: normal normal;
+
 
         }
         p.text{
+            align-content: center;
             text-align: center;
-            border: 1px dashed lightcoral;
+            border: 0.5px dashed lightcoral;
         }
     </style>
 </head>
@@ -34,6 +32,8 @@
         <p class="text">e</p>
         <p class="text">f</p>
         <p class="text">g</p>
+        <p class="text">h</p>
+        <p class="text">i</p>
     </div>
 </body>
 </html>

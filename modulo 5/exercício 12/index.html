@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid-layout</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      div.container {
+        display: grid;
+        margin: auto;
+        height: 500px;
+        width: 500px;
+        border: 1px solid lightblue;
+        grid-template: repeat(6, 1fr) / repeat(5, 1fr);
+        place-items: normal normal;
+        place-content: normal normal;
+        grid-auto-flow: row;
+      }
+      .content1 {
+        grid-area: 1/1/3/-1;
+      }
+      .content2 {
+        grid-area: 3/1/5/3;
+      }
+      .content3{
+        grid-row: 3/5;
+      }
+      .content4{
+        grid-area: 3/4/5/-1;
+      }
+      .content10{
+        grid-column: 1/-1;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="text content1">a</p>
+      <p class="text content2">b</p>
+      <p class="text content3">c</p>
+      <p class="text content4">d</p>
+      <p class="text content5">e</p>
+      <p class="text content6">f</p>
+      <p class="text content7">g</p>
+      <p class="text content8">h</p>
+      <p class="text content9">i</p>
+      <p class="text content10">j</p>
+    </div>
+  </body>
+</html>
